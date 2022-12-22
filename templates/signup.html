@@ -1,0 +1,90 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/app.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/components.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href="{% static 'img/favicon.ico' %}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+
+<body class="light light-sidebar theme-white">
+  <div class="loader" style="display: none;"></div>
+  <div id="app">
+    <section class="section">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4><ya-tr-span data-index="0-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value="Register" data-translation="Ro'yxatdan o'tish" data-ch="0" data-type="trSpan">Register</ya-tr-span></h4>
+              </div>
+              <div class="card-body">
+                <form method="POST">
+                  <div class="row">
+                    <div class="form-group col-6">
+                      <label for="frist_name"><ya-tr-span data-index="1-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value="First Name" data-translation="Ismi" data-ch="0" data-type="trSpan">Ismi</ya-tr-span></label>
+                      <input id="frist_name" type="text" class="form-control" name="frist_name" autofocus="">
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="last_name"><ya-tr-span data-index="2-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value="Last Name" data-translation="Familiyasi" data-ch="0" data-type="trSpan">Familiyasi</ya-tr-span></label>
+                      <input id="last_name" type="text" class="form-control" name="last_name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email"><ya-tr-span data-index="3-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value="Email" data-translation="Elektron pochta" data-ch="0" data-type="trSpan">Elektron pochta</ya-tr-span></label>
+                    <input id="email" type="email" class="form-control" name="email">
+                    <div class="invalid-feedback">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-6">
+                      <label for="password" class="d-block"><ya-tr-span data-index="4-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value="Password" data-translation="Maxfiy so'z" data-ch="0" data-type="trSpan">Maxfiy so'z</ya-tr-span></label>
+                      <input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password">
+                      <div id="pwindicator" class="pwindicator">
+                        <div class="bar"></div>
+                        <div class="label"></div>
+                      </div>
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="password2" class="d-block"><ya-tr-span data-index="5-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value="Password Confirmation" data-translation="Parolni Tasdiqlash" data-ch="0" data-type="trSpan">Parolni Tasdiqlash</ya-tr-span></label>
+                      <input id="password2" type="password" class="form-control" name="password-confirm">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" name="agree" class="custom-control-input" id="agree">
+                      <label class="custom-control-label" for="agree"><ya-tr-span data-index="6-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value="I agree with the terms and conditions" data-translation="Shartlar va shartlarga qo'shilaman" data-ch="0" data-type="trSpan">shartlarga qo'shilaman</ya-tr-span></label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block"><ya-tr-span data-index="7-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value=" Register " data-translation=" Ro'yxatdan o'tish " data-ch="0" data-type="trSpan">  Ro'yxatdan o'tish  </ya-tr-span></button>
+                  </div>
+                </form>
+              </div>
+              <div class="mb-4 text-muted text-center"><ya-tr-span data-index="8-0" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value=" Already Registered? " data-translation=" Allaqachon Ro'yxatdan? " data-ch="0" data-type="trSpan">  Allaqachi Ro'yxatda? </ya-tr-span><a href="{% url 'login' %}"><ya-tr-span data-index="8-1" data-translated="false" data-source-lang="en" data-target-lang="uz" data-value="Login" data-translation="Kirishima" data-ch="0" data-type="trSpan">Login</ya-tr-span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="assets/bundles/jquery-pwstrength/jquery.pwstrength.min.js"></script>
+  <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/auth-register.js"></script>
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!--<form action="addrecord/" method="post">-->
+<!--{% csrf_token %}-->
+<!--First Name:<br>-->
+<!--<input name="turi">-->
+<!--<br><br>-->
+<!--Last Name:<br>-->
+<!--<input name="nomi">-->
+<!--<br><br>-->
+<!--<input type="submit" value="Submit">-->
+<!--</form>-->
+<div class="section-body">
+
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4><ya-tr-span data-index="274-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Simple Summernote" data-translation="Oddiy Summernote" data-ch="0" data-type="trSpan">Maxsulot qo'shish</ya-tr-span></h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"><ya-tr-span data-index="141-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Category" data-translation="Turkum" data-ch="0" data-type="trSpan">Turkum</ya-tr-span></label>
+                      <div class="col-sm-12 col-md-7">
+                        <select class="form-control selectric" tabindex="-1">
+                          <option>ichimliklar</option>
+                          <option>sabzavodlar</option>
+                          <option>mevalar</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"><ya-tr-span data-index="140-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Title" data-translation="Sarlavha" data-ch="0" data-type="trSpan">Nomi</ya-tr-span></label>
+                      <div class="col-sm-12 col-md-7">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">malumot</label>
+                      <div class="col-sm-12 col-md-7">
+                        <textarea class="summernote-simple" style="display: none;"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">soni</label>
+                      <div class="col-sm-12 col-md-7">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">narxi</label>
+                      <div class="col-sm-12 col-md-7">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">aksiya</label>
+                      <div class="col-sm-12 col-md-7">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"><ya-tr-span data-index="203-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Thumbnail" data-translation="Kichik rasm" data-ch="0" data-type="trSpan">Rasm</ya-tr-span></label>
+                      <div class="col-sm-12 col-md-7">
+                        <div id="image-preview" class="image-preview">
+                          <label for="image-upload" id="image-label"><ya-tr-span data-index="204-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Choose File" data-translation="Faylni Tanlash" data-ch="0" data-type="trSpan">Faylni Tanlash</ya-tr-span></label>
+                          <input type="file" name="image" id="image-upload">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
+                      <div class="col-sm-12 col-md-7">
+                        <button class="btn btn-primary"><ya-tr-span data-index="150-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Publish" data-translation="Nashr qilish" data-ch="0" data-type="trSpan">Nashr qilish</ya-tr-span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Basic DataTables</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped" id="table-1">
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                              #
+                            </th>
+                            <th>Nomi</th>
+                            <th>soni</th>
+                            <th>narx</th>
+                            <th>img</th>
+                            <th>sana</th>
+                            <th>Tahrirlash</th>
+                            <th>O'chirish</th>
+                            <th>Batafsil</th>
+                          </tr>
+                        </thead>
+                        {% for x in maxsulot %}
+                        <tbody>
+                          <tr>
+                            <td>
+                              1
+                            </td>
+                            <td>{{x.nomi}}</td>
+                            <td>{{x.soni}}</td>
+                            <td>{{x.narxi}} so'm</td>
+                            <td>
+                              <img alt="image" src="{{x.img.url}}" width="80" style="border-radius: 10px;">
+                            </td>
+                            <td>{{x.sana}}</td>
+                            <td>
+                              <a class="btn btn-info btn-border-radius waves-effect" data-toggle="tooltip" title="" data-original-title="Tahtitlash"><i class="fas fa-pencil-alt"></i></a>
+                            </td>
+                            <td>
+                               <a class="btn btn-danger btn-border-radius waves-effect" data-toggle="tooltip" title=""  data-original-title="O'chirish"><i class="fas fa-trash"></i></a>
+                            </td>
+                            <td>
+                              <a href="{% url 'm_batafsil' %}" class="btn btn-outline-primary" data-toggle="tooltip" title="" data-original-title="Batafsil"> <i class="fas fa-angle-double-right"></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                        {% endfor %}
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+{% endblock content %}

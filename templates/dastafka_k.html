@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Basic DataTables</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped" id="table-1">
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                              #
+                            </th>
+                            <th>F.I.O</th>
+                            <th>Tel</th>
+                            <th>login</th>
+                            <th>parol</th>
+                            <th>O'chirish</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              1
+                            </td>
+                            <td>ism,familiya</td>
+                            <td>998*****</td>
+                            <td>loin</td>
+                            <td>parol</td>
+                            <td>
+                              <a class="btn btn-danger btn-border-radius waves-effect" data-toggle="tooltip" title="" data-original-title="O'chirish"><i class="fas fa-times"></i></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+{% endblock content %}

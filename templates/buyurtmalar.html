@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Basic DataTables</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped" id="table-1">
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                              #
+                            </th>
+                            <th>Dokon nomi</th>
+                            <th>F.I.O</th>
+                            <th>kun</th>
+                            <th>manzil</th>
+                            <th>Batafsil</th>
+                            <th>qabul qilish</th>
+                            <th>O'chirish</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              1
+                            </td>
+                            <td>karzinka</td>
+                            <td>ism,familiya</td>
+                            <td>kecha</td>
+                            <td>
+                              <a href="{% url 'manzil' %}" class="btn btn-outline-primary" data-toggle="tooltip" title="" data-original-title="Xarita"> <i class="fas fa-map-marked-alt"></i></a>
+
+                            </td>
+                            <td>
+                              <a href="{% url 'buyurtma_batafsil' %}" class="btn btn-outline-primary" data-toggle="tooltip" title="" data-original-title="Batafsil"> <i class="fas fa-angle-double-right"></i></a>
+                            </td>
+                            <td>
+                              <a class="btn btn-info btn-border-radius waves-effect" data-toggle="tooltip" title="" data-original-title="Qabul qilish"><i class="fas fa-check"></i></a>
+                            </td>
+                            <td>
+                              <a class="btn btn-danger btn-border-radius waves-effect" data-toggle="tooltip" title="" data-original-title="O'chirish"><i class="fas fa-times"></i></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+{% endblock content %}

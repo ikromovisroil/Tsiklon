@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="section-body">
+            <div class="row mt-sm-4">
+              <div class="col-12 col-md-12 col-lg-4">
+                <div class="card author-box">
+                  <div class="card-body">
+                    <div class="author-box-center">
+                      <img alt="rasm" src="{% static 'img/user-1.png' %}" class="rounded-circle author-box-picture">
+                      <div class="clearfix"></div>
+                      <div class="author-box-name">
+                        <a href="#"><ya-tr-span data-index="138-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Sarah Smith" data-translation="Sara Smit" data-ch="0" data-type="trSpan">Firma nomi</ya-tr-span></a>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-social-icon mr-1 btn-facebook">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-twitter">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-github">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-instagram">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <div class="w-100 d-sm-none"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h4><ya-tr-span data-index="142-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Personal Details" data-translation="Shaxsiy Tafsilotlar" data-ch="0" data-type="trSpan">Malumotlar</ya-tr-span></h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="py-4">
+                      <p class="clearfix">
+                        <span class="float-left"><ya-tr-span data-index="143-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" Birthday " data-translation=" Tug'ilgan" data-ch="0" data-type="trSpan">F.I.O</ya-tr-span></span>
+                        <span class="float-right text-muted"><ya-tr-span data-index="143-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" 30-05-1998 " data-translation=" kun 30-05-1998" data-ch="0" data-type="trSpan">ism familiya</ya-tr-span></span>
+                      </p>
+                      <p class="clearfix">
+                        <span class="float-left"><ya-tr-span data-index="144-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" Phone " data-translation=" Telefon" data-ch="0" data-type="trSpan"> Telefon</ya-tr-span></span>
+                        <span class="float-right text-muted"><ya-tr-span data-index="144-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" (0123)123456789 " data-translation=" (0123)123456789" data-ch="0" data-type="trSpan"> (0123)123456789</ya-tr-span></span>
+                      </p>
+                      <p class="clearfix">
+                        <span class="float-left"><ya-tr-span data-index="145-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" Mail " data-translation=" Pochta" data-ch="0" data-type="trSpan"> Manzil</ya-tr-span></span>
+                        <span class="float-right text-muted"><ya-tr-span data-index="145-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" test@example.com " data-translation=" test@example.com " data-ch="0" data-type="trSpan"> buxoro </ya-tr-span></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-8">
+                <div class="card">
+                  <div class="padding-20">
+                    <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#about" role="tab" aria-selected="true"><ya-tr-span data-index="146-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="About" data-translation="Haqida" data-ch="0" data-type="trSpan" data-selected="false">Haqida</ya-tr-span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#settings" role="tab" aria-selected="false"><ya-tr-span data-index="147-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Setting" data-translation="O'rnatish" data-ch="0" data-type="trSpan" data-selected="false">O'rnatish</ya-tr-span></a>
+                      </li>
+                    </ul>
+                    <div class="tab-content tab-bordered" id="myTab3Content">
+                      <div class="tab-pane fade active show" id="about" role="tabpanel" aria-labelledby="home-tab2">
+                        <p><ya-tr-span data-index="156-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Worked as Professor and Head of the department at Sarda Collage, Rajkot, Gujarat from 2003-2015 " data-translation="Professor va kafedra mudiri bo'lib ishlagan Sarda kollaji, Rajkot, Gujarat 2003-2015 yillarda " data-ch="0" data-type="trSpan" data-selected="false">Professor va kafedra mudiri bo'lib ishlagan Sarda kollaji, Rajkot, Gujarat 2003-2015 yillarda </ya-tr-span></p>
+                      </div>
+                      <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="profile-tab2">
+                        <form method="post" class="needs-validation">
+                          <div class="card-header">
+                            <h4><ya-tr-span data-index="161-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Edit Profile" data-translation="Profilni Tahrirlash" data-ch="0" data-type="trSpan" data-selected="false">Profilni Tahrirlash</ya-tr-span></h4>
+                          </div>
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="form-group col-md-6 col-12">
+                                <label><ya-tr-span data-index="162-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="First Name" data-translation="Ismi" data-ch="0" data-type="trSpan">Ismi</ya-tr-span></label>
+                                <input type="text" class="form-control" value="John">
+                                <div class="invalid-feedback"><ya-tr-span data-index="163-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" Please fill in the first name " data-translation=" Iltimos, ismni to'ldiring " data-ch="0" data-type="trSpan">  Iltimos, ismni to'ldiring  </ya-tr-span></div>
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label><ya-tr-span data-index="164-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Last Name" data-translation="Familiyasi" data-ch="0" data-type="trSpan">Familiyasi</ya-tr-span></label>
+                                <input type="text" class="form-control" value="Deo">
+                                <div class="invalid-feedback"><ya-tr-span data-index="165-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" Please fill in the last name " data-translation=" Iltimos familiyani to'ldiring " data-ch="0" data-type="trSpan">  Iltimos familiyani to'ldiring  </ya-tr-span></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-md-7 col-12">
+                                <label><ya-tr-span data-index="166-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Email" data-translation="Elektron pochta" data-ch="1" data-type="trSpan">Firma nomi</ya-tr-span></label>
+                                <input type="text" class="form-control" value="text">
+                                <div class="invalid-feedback"><ya-tr-span data-index="167-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value=" Please fill in the email " data-translation=" Elektron pochta to'ldiring " data-ch="0" data-type="trSpan">  Elektron pochta to'ldiring  </ya-tr-span></div>
+                              </div>
+                              <div class="form-group col-md-5 col-12">
+                                <label><ya-tr-span data-index="168-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Phone" data-translation="Telefon" data-ch="0" data-type="trSpan">Telefon</ya-tr-span></label>
+                                <input type="tel" class="form-control" value="+998">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-12">
+                                <label><ya-tr-span data-index="169-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Bio" data-translation="Bio" data-ch="0" data-type="trSpan">Bio</ya-tr-span></label>
+                                <textarea class="form-control summernote-simple" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatum alias molestias minus quod dignissimos.</textarea>
+                              </div>
+                            </div>
+                            <div class="row">
+                      <label><ya-tr-span data-index="168-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Thumbnail" data-translation="Kichik rasm" data-ch="0" data-type="trSpan">Kichik rasm</ya-tr-span></label>
+                      <div class="col-sm-12 col-md-7">
+                        <div id="image-preview" class="image-preview">
+                          <label for="image-upload" id="image-label"><ya-tr-span data-index="151-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Choose File" data-translation="Faylni Tanlash" data-ch="0" data-type="trSpan">Faylni Tanlash</ya-tr-span></label>
+                          <input type="file" name="image" id="image-upload">
+                        </div>
+                      </div>
+                    </div>
+                          </div>
+                          <div class="card-footer text-right">
+                            <button class="btn btn-primary"><ya-tr-span data-index="172-0" data-translated="true" data-source-lang="en" data-target-lang="uz" data-value="Save Changes" data-translation="O'zgarishlarni Saqlash" data-ch="0" data-type="trSpan">O'zgarishlarni Saqlash</ya-tr-span></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+{% endblock content %}
