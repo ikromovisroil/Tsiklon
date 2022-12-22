@@ -8,6 +8,7 @@ class MaxsulotAdmin(admin.ModelAdmin):
     list_filter = ('turi','nomi','soni',)
     search_fields = ('id','turi','nomi',)
     #dsfsdf
+    #sddfsdfds
 
 @admin.register(Turi)
 class TuriAdmin(admin.ModelAdmin):
